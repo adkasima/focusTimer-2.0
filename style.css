@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --primary-color: #323238;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.playing path:nth-child(1){
+    fill: #02799D;
+
+}
+
+.playing path:nth-child(2){
+    fill: white;
+
+}
+
+body button {
+    border: none;
+    cursor: pointer;
+}
+
+body button:hover {
+    transform: scale(1.1);
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 19.2rem;
+    margin-top:10rem;
+}
+
+main .timer #time {
+    margin-top: 5rem;
+}
+
+main .timer #time span {
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+    color: #323238;
+}
+
+main .timer #controls {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+main .sounds {
+    display: grid;
+}
+
+main .sounds {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'A B'
+        'C D';
+}
+
+main .sounds .card {
+    margin: 2rem;
+}
+
+.col-a {
+    grid-area: A;
+}
+
+.col-b {
+    grid-area: B;
+}
+
+.col-c {
+    grid-area: C;
+}
+
+.col-d {
+    grid-area: D;
+}
